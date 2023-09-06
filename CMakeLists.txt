@@ -3,4 +3,4 @@ project(MGM1_Errors_kmclevel)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(MGM1_Errors_kmclevel main.cpp)
+add_executable(MGM1_Errors_kmclevel main.cpp spie.cpp spie.h)
