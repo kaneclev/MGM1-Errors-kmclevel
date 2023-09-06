@@ -1,0 +1,3 @@
+/Users/kanecleveland/Desktop/CS2300/MGM1-Errors-kmclevel/cmake-build-debug/CMakeFiles/MGM1_Errors_kmclevel.dir
+/Users/kanecleveland/Desktop/CS2300/MGM1-Errors-kmclevel/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kanecleveland/Desktop/CS2300/MGM1-Errors-kmclevel/cmake-build-debug/CMakeFiles/rebuild_cache.dir

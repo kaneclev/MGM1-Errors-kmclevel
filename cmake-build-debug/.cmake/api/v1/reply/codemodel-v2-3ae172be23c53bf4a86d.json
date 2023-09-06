@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MGM1_Errors_kmclevel",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "MGM1_Errors_kmclevel::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MGM1_Errors_kmclevel-Debug-d4b149c518705e4df0f8.json",
+					"name" : "MGM1_Errors_kmclevel",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/kanecleveland/Desktop/CS2300/MGM1-Errors-kmclevel/cmake-build-debug",
+		"source" : "/Users/kanecleveland/Desktop/CS2300/MGM1-Errors-kmclevel"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
