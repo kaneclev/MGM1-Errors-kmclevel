@@ -2,7 +2,7 @@
 #include <time.h>
 using namespace std;
 
-SPIE_Game() {
+SPIE_Game::SPIE_Game() {
     srand(time(NULL));
     winning_numbers.clear();
     add_winning_number();
@@ -33,7 +33,7 @@ char SPIE_Game::get_player_choice(ostream &outs, istream &ins) {
     char choice;
     print_options(outs);
     ins >> choice;
-    while (choice != ('s' || 'p' || 'i' || 'e')) {
+    while (choice != 's' && choice != 'p' && choice != 'i' && choice != 'e') {
         outs << endl << "Invalid option. " << endl;
         print_options(outs);
         ins >> choice;

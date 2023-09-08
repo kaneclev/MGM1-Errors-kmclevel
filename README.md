@@ -1,1 +1,7 @@
 # Errors
+| Error Type | File     | Description                                                                                                 | Fix                                                                |   
+|------------|----------|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| Compiler   | spie.h   | Improper declaration of vector                                                                              | Declare vector properly with std::                                 |
+| Compiler   | spie.h   | Syntax error with ostream; std:: needed                                                                     | Declare ostream with std::                                         |  
+| Compiler   | spie.cpp | The constructor was missing SPIE_Game:: for declaration as a constructor; it appeared as a function instead | Include SPIE_Game::                                                |
+| Logic      | spie.cpp | The while loop on line 36 has an improper stop condition                                                    | Instead of OR operators, use && operators and extend the statement |
