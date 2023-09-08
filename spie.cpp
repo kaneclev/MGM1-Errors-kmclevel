@@ -38,6 +38,7 @@ char SPIE_Game::get_player_choice(ostream &outs, istream &ins) {
         print_options(outs);
         ins >> choice;
     }
+    return choice;
 }
 
 bool SPIE_Game::matches_winning_number(int roll) const {

@@ -2,9 +2,9 @@
 using namespace std;
 
 int main() {
-    SPIE_Game game();
+    SPIE_Game game;
     game.print_rules(cout);
-    game.print_winning_numbers;
+    game.print_winning_numbers(cout);
 
     int score = 5;
     char choice = 'p';
@@ -12,12 +12,16 @@ int main() {
     while (choice != 'e') {
         choice = game.get_player_choice(cout, cin);
 
-        switch(choice)
-            case 's': game.scramble(cout);
-        break;
-        case 'i': game.print_rules(cout);
-        break;
-        case 'p': cout << "Your score is " << score << endl;
+        switch(choice) {
+            case 's':
+                game.scramble(cout);
+                break;
+            case 'i':
+                game.print_rules(cout);
+                break;
+            case 'p':
+                cout << "Your score is " << score << endl;
+        }
         game.print_winning_numbers(cout);
         int dice_roll = game.roll_dice();
         cout << "Your dice roll is: " << dice_roll << endl;
