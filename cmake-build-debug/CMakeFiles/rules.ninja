@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /private/var/folders/0b/0ph7xrpj5sv4slsxm2tmb7hw0000gn/T/AppTranslocation/BD6971A7-89F1-4F86-973E-41B8FD491262/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/kanecleveland/Desktop/CS2300/MGM1-Errors-kmclevel -B/Users/kanecleveland/Desktop/CS2300/MGM1-Errors-kmclevel/cmake-build-debug
+  command = /private/var/folders/0b/0ph7xrpj5sv4slsxm2tmb7hw0000gn/T/AppTranslocation/CA0453E1-8C8A-4F91-96F5-9E6F7000BED8/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/kanecleveland/Desktop/CS2300/MGM1-Errors-kmclevel -B/Users/kanecleveland/Desktop/CS2300/MGM1-Errors-kmclevel/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
@@ -51,7 +51,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = /private/var/folders/0b/0ph7xrpj5sv4slsxm2tmb7hw0000gn/T/AppTranslocation/BD6971A7-89F1-4F86-973E-41B8FD491262/d/CLion.app/Contents/bin/ninja/mac/ninja $FILE_ARG -t clean $TARGETS
+  command = /private/var/folders/0b/0ph7xrpj5sv4slsxm2tmb7hw0000gn/T/AppTranslocation/CA0453E1-8C8A-4F91-96F5-9E6F7000BED8/d/CLion.app/Contents/bin/ninja/mac/ninja $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -59,6 +59,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = /private/var/folders/0b/0ph7xrpj5sv4slsxm2tmb7hw0000gn/T/AppTranslocation/BD6971A7-89F1-4F86-973E-41B8FD491262/d/CLion.app/Contents/bin/ninja/mac/ninja -t targets
+  command = /private/var/folders/0b/0ph7xrpj5sv4slsxm2tmb7hw0000gn/T/AppTranslocation/CA0453E1-8C8A-4F91-96F5-9E6F7000BED8/d/CLion.app/Contents/bin/ninja/mac/ninja -t targets
   description = All primary targets available:
 

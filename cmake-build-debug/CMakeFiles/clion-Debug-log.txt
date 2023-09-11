@@ -1,4 +1,4 @@
-/private/var/folders/0b/0ph7xrpj5sv4slsxm2tmb7hw0000gn/T/AppTranslocation/BD6971A7-89F1-4F86-973E-41B8FD491262/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/private/var/folders/0b/0ph7xrpj5sv4slsxm2tmb7hw0000gn/T/AppTranslocation/BD6971A7-89F1-4F86-973E-41B8FD491262/d/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/kanecleveland/Desktop/CS2300/MGM1-Errors-kmclevel -B /Users/kanecleveland/Desktop/CS2300/MGM1-Errors-kmclevel/cmake-build-debug
+/private/var/folders/0b/0ph7xrpj5sv4slsxm2tmb7hw0000gn/T/AppTranslocation/CA0453E1-8C8A-4F91-96F5-9E6F7000BED8/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/private/var/folders/0b/0ph7xrpj5sv4slsxm2tmb7hw0000gn/T/AppTranslocation/CA0453E1-8C8A-4F91-96F5-9E6F7000BED8/d/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/kanecleveland/Desktop/CS2300/MGM1-Errors-kmclevel -B /Users/kanecleveland/Desktop/CS2300/MGM1-Errors-kmclevel/cmake-build-debug
 -- The C compiler identification is AppleClang 12.0.5.12050022
 -- The CXX compiler identification is AppleClang 12.0.5.12050022
 -- Detecting C compiler ABI info

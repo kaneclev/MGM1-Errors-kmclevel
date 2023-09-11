@@ -13,10 +13,9 @@ bool SPIE_Game::add_winning_number() {
     if (winning_numbers.size() == MAX_NUMBERS) {
         return false;
     }
-    // int new_number = rand() % MAX_NUMBERS + 1; todo: how it was before
+    int new_number = rand() % MAX_NUMBERS + 1; //todo: how it was before
     for (int i = 0; i < winning_numbers.size(); ++i) {
         //todo: this was my change (variable wasnt accessed before, now it is)
-        int new_number = rand() % MAX_NUMBERS + 1;
 
         if (new_number == winning_numbers[i]) {
 
