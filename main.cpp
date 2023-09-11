@@ -42,13 +42,15 @@ int main() {
         }
         cout << "Your new score is " << score << endl;
     }
-}
+    if (score == 0) {
+        cout << "You lost the game!" << endl;
+    }
+    else {
+        cout << "Play again soon!" << endl;
+    }
 
-if (score == 0) {
-cout << "You lost the game!" << endl;
-else {
-cout << "Play again soon!" << endl;
-}
 
-return 0
+
+
+    return 0;
 }
