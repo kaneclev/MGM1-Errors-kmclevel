@@ -5,6 +5,7 @@ using namespace std;
 SPIE_Game::SPIE_Game() {
     srand(time(NULL));
     winning_numbers.clear();
+
     add_winning_number();
     add_winning_number();
 }
@@ -13,6 +14,7 @@ bool SPIE_Game::add_winning_number() {
     if (winning_numbers.size() == MAX_NUMBERS) {
         return false;
     }
+    cout << winning_numbers.size() << endl;
     int new_number = rand() % MAX_NUMBERS + 1; //todo: how it was before
     for (int i = 0; i < winning_numbers.size(); ++i) {
         //todo: this was my change (variable wasnt accessed before, now it is)
@@ -23,6 +25,9 @@ bool SPIE_Game::add_winning_number() {
             // Must choose a new number and start again.
             new_number = rand() % MAX_NUMBERS + 1;
             i = -1;
+        }
+        else {
+            winning_numbers.insert(winning_numbers.begin(), new_number);
         }
     }
     return true;
