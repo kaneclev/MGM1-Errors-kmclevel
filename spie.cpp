@@ -1,26 +1,43 @@
 #include "spie.h"
 #include <time.h>
 using namespace std;
+// TODO: ENTER INTO README:
+// todo: The first two calls to add_winning_number() in the constructor of SPIE_Game
+//  dont run because in the original for_loop, the condition for stopping was i < winningnumbers.size()
+//  and winning_numbers.size() is zero to begin with so it never populated it.
+
 
 SPIE_Game::SPIE_Game() {
     srand(time(NULL));
     winning_numbers.clear();
+   // for(int i = 0; i < 12; i++) {
+     //   winning_numbers.push_back(-1);
+    //}
 
-    add_winning_number();
     add_winning_number();
 }
 
 bool SPIE_Game::add_winning_number() {
+    int new_number = rand() % MAX_NUMBERS + 1;
+
+
+    // TODO: TEMPORARY FIX
+    if(winning_numbers.empty()) {
+        winning_numbers.insert(winning_numbers.begin(), new_number);
+        winning_numbers.insert(winning_numbers.begin(), new_number);
+        return true;
+
+
+    }
+
     if (winning_numbers.size() == MAX_NUMBERS) {
         return false;
     }
     cout << winning_numbers.size() << endl;
-    int new_number = rand() % MAX_NUMBERS + 1; //todo: how it was before
     for (int i = 0; i < winning_numbers.size(); ++i) {
         //todo: this was my change (variable wasnt accessed before, now it is)
 
         if (new_number == winning_numbers[i]) {
-
             // Number is already a winning number.
             // Must choose a new number and start again.
             new_number = rand() % MAX_NUMBERS + 1;
