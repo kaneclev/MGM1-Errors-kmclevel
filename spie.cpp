@@ -10,45 +10,48 @@ using namespace std;
 SPIE_Game::SPIE_Game() {
     srand(time(NULL));
     winning_numbers.clear();
-   // for(int i = 0; i < 12; i++) {
-     //   winning_numbers.push_back(-1);
-    //}
-
     add_winning_number();
 }
 
 bool SPIE_Game::add_winning_number() {
     int new_number = rand() % MAX_NUMBERS + 1;
 
-
     // TODO: TEMPORARY FIX
-    if(winning_numbers.empty()) {
-        winning_numbers.insert(winning_numbers.begin(), new_number);
-        winning_numbers.insert(winning_numbers.begin(), new_number);
+    if (winning_numbers.empty()) {
+        for (int i = 0; i < 2; i++) {
+            // Check and make sure the first two numbers we add aren't duplicates.
+            if (i == 1 && new_number == winning_numbers[0]) {
+                // Number is already a winning number.
+                // Must choose a new number and start again.
+                new_number = rand() % MAX_NUMBERS + 1;
+                i--;
+            } else {
+                winning_numbers.insert(winning_numbers.begin(), new_number);
+            }
+
+        }
         return true;
 
+        }
 
-    }
-
-    if (winning_numbers.size() == MAX_NUMBERS) {
-        return false;
-    }
-    cout << winning_numbers.size() << endl;
+        if (winning_numbers.size() == MAX_NUMBERS) {
+            cout << "You have the maximum amount of winning numbers. " << endl;
+            return false;
+        }
+        cout << winning_numbers.size() << endl;
     for (int i = 0; i < winning_numbers.size(); ++i) {
-        //todo: this was my change (variable wasnt accessed before, now it is)
-
         if (new_number == winning_numbers[i]) {
             // Number is already a winning number.
             // Must choose a new number and start again.
             new_number = rand() % MAX_NUMBERS + 1;
             i = -1;
         }
-        else {
-            winning_numbers.insert(winning_numbers.begin(), new_number);
-        }
     }
-    return true;
-}
+        return true;
+    }
+
+
+
 
 char SPIE_Game::get_player_choice(ostream &outs, istream &ins) {
     char choice;
@@ -114,14 +117,14 @@ void SPIE_Game::scramble(ostream &outs) {
     int replacements = 0;
     for (int w = 0; w < winning_numbers.size(); ++w) {
         for (int r = 0; r < dice_rolls.size(); ++r) {
-            if (dice_rolls[r] == winning_numbers[w]) {
+            if (dice_rolls[r] == winning_numbers[w]) { // todo: at this point there wont be another case of this b/c no duplicated in
                 winning_numbers.erase(winning_numbers.begin() + w);
                 ++replacements;
             }
         }
     }
 
-    outs << "You replaced " << replacements << " winning numbers!" << endl;
+    outs << "You replaced " << replacements << " winning number(s)!" << endl;
 
     for (int i = 0; i < replacements; ++i) {
         add_winning_number();

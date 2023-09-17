@@ -16,7 +16,7 @@ int main() {
             case 's':
                 cout << "CHOICE: s" << endl;
                 game.scramble(cout);
-                break;
+                continue;
             case 'i':
                 game.print_rules(cout);
                 continue; // todo; my change; continue instead of break.
